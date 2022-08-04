@@ -23,10 +23,17 @@ a{
     text-decoration: none;
     color: white;
 }
+.header_right a{
+    color: #969696;;
+}
+.header_right a:hover{
+     color: #FFFFFF; 
+    }
 .header_right{
     align-items: center;
     margin-top: 30px;
     display: flex;
+    height: 10vh;
     justify-content: space-evenly;
     width: 50%;
 }
@@ -97,7 +104,7 @@ color: #FFFFFF;
 
 }
 .newsss hr{
-    margin-left: 600px;
+
     margin-bottom: 80px;
 }
 .news{
@@ -195,7 +202,6 @@ color: #FFFFFF;
    .newsss>h1{
     margin-top: 120px;
     margin-bottom: 120px;
-    margin-left: 70px;
     font-style: normal;
 font-weight: 700;
 font-size: 36px;
@@ -226,13 +232,16 @@ text-transform: uppercase;
 color: #FFFFFF;
 margin-top: 150px;
 }
+.hr2{
+    display: flex;
+    justify-content: center;
+}
 .newsss>h1{
     margin-bottom: 40px;
 }
 .company hr{
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 600px;
 }
 .brands{
     display: flex;
@@ -253,8 +262,8 @@ margin-top: 150px;
 }
 .comments{
     display: flex;
-    height: 100%;
-    align-items: center;
+    height: 100%;   
+    justify-content: space-between;
 }
 .conteiner{
     width: 70%;
@@ -281,7 +290,24 @@ margin-top: 150px;
 .menu{
     display: none;
 }
+.comments>div{
+    margin-top: 5vh;
+}
+.cate div{
+    display: flex;
+    margin-top: 3vh;
+}
+#text{
+    padding: 12px 15px;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.4);
+}
+#submit{
 
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+}
 
 
 
@@ -300,18 +326,26 @@ margin-top: 150px;
     .menu{
         display: inline-block;
         width: 100px;
+        
     }
-    main{
+    .p p{
+        width: 90%;
+    }
+    .main_div{
         width: 220px;
         height: 220px;
-    }
+    }   
     .top, .bottom{
         height: 140vh;
         flex-direction: column;
     }
-    .season, .new, .costumes, .coll18{
-      width: 100%;
-      height: 50%;
+    .season, .new{
+        width: 100%;
+        height: 50%;
+    }
+    .costumes, .coll18{
+        width: 100%;
+        height: 50%;
     }
     .coll18{
         order: 1;
@@ -320,19 +354,60 @@ margin-top: 150px;
         order: 2;
     }
     .news .clocks{
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .news .clock{
         width: 40%;
     }
-    .news .conteiner{
-        height: 180vh;
-    }
     .brands .brand{
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
-    .brands .clock{
+    .brands div img{
         width: 40%;
+    }
+    .footer{
+       height: 120vh;
+    }
+    .clocks div img{
+        height: 150px;
+    width: 150px;
+    }
+    .clock div{
+        width: 119px;
+    height: 193px;
+}
+.lorem{
+    width: 100%;
+}
+.news{
+    margin-left: 5px;
+}
+.news .clocks .clock div{
+    width: 160px;
+}
+.brand{
+    text-align: center;
+}
+#submit{
+    margin-top: 2vh;
+
+    }
+    #text{
+        width: 100%;
+    }
+    .cate div{
+        flex-direction: column;
+    }
+    .footer .conteiner .cate{
+        display: flex;
+        flex-direction: column;
+    }
+    .comments{
+        flex-direction: column;
+    }
+    .footer .cate{
+        width: 100%;
+        margin: 15px 0;
     }
 
 }
